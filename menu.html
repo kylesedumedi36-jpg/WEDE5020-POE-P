@@ -1,89 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ora's Bakery menu.">
-<title>Ora's Bakery | Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse cakes, pastries, fresh bread and drinks from Ora's Bakery.">
+  <meta name="keywords" content="Ora's Bakery, bakery, cakes, fresh bread, pastries, muffins">
+  <meta name="author" content="ST10337762">
+  <title>Menu | Ora's Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Ora's Bakery home">
+      <span class="brand-icon" aria-hidden="true">🍰</span>
+      <span>Ora's Bakery<small>Freshly baked with care</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<table width="100%" cellpadding="18" cellspacing="0">
-<tr><td align="center">
-<h1>🍰 Ora's Bakery 🥐</h1>
-<p><i>Freshly baked with care</i></p>
-</td></tr>
-</table>
-
-<table width="100%" cellpadding="12" cellspacing="0">
-<tr align="center">
-<td><a href="index.html"><b>HOME</b></a></td>
-<td><a href="about.html"><b>ABOUT US</b></a></td>
-<td><a href="menu.html"><b>MENU</b></a></td>
-<td><a href="gallery.html"><b>GALLERY</b></a></td>
-<td><a href="contact.html"><b>CONTACT</b></a></td>
-</tr>
-</table>
-
-
-<table width="100%" cellpadding="8">
-<tr><td align="center"><b>Home &gt; Menu</b></td></tr>
-</table>
-
-<table width="92%" align="center" cellpadding="20" cellspacing="12">
-<tr><td>
-<h2>Our Menu</h2>
-<p>Choose from our selection of fresh bakery products.</p>
-
-<h3 id="cakes">🎂 Cakes</h3>
-<ul>
-<li>Chocolate Cake</li>
-<li>Vanilla Cake</li>
-<li>Red Velvet Cake</li>
-<li>Birthday Celebration Cake</li>
-</ul>
-
-<h3 id="pastries">🥐 Pastries</h3>
-<ul>
-<li>Croissants</li>
-<li>Blueberry Muffins</li>
-<li>Chocolate Muffins</li>
-<li>Fruit Pastries</li>
-</ul>
-
-<h3 id="bread">🍞 Bread</h3>
-<ul>
-<li>Fresh White Bread</li>
-<li>Brown Bread</li>
-<li>Whole Wheat Bread</li>
-<li>Sweet Rolls</li>
-</ul>
-
-<h3 id="drinks">☕ Drinks</h3>
-<ul>
-<li>Coffee</li>
-<li>Tea</li>
-<li>Hot Chocolate</li>
-<li>Fresh Juice</li>
-</ul>
-
-<p>
-<a href="index.html">Back to Home</a> |
-<a href="gallery.html">View Gallery</a> |
-<a href="contact.html">Contact Us</a>
-</p>
-</td></tr>
-</table>
-
-<br>
-<table width="100%" cellpadding="18">
-<tr><td align="center">
-<b>🍪 Ora's Bakery 🍪</b><br>
-Freshly baked for every occasion.<br>
-Phone: 012 345 6789 | Email: info@orasbakery.example<br>
-© 2026 Ora's Bakery. All rights reserved.
-</td></tr>
-</table>
-
+<main id="main-content" class="container page-content">
+  <section class="page-intro"><p class="eyebrow">Something for everyone</p><h1>Our Menu</h1><p>Search the menu below to find a bakery item. Prices and availability can be confirmed by enquiry.</p></section>
+  <div class="search-box"><label for="menu-search">Search menu items</label><input id="menu-search" type="search" placeholder="Try cake, bread or coffee"><p id="search-status" class="form-help" aria-live="polite">Showing all menu items.</p></div>
+  <div class="menu-grid" id="menu-items">
+    <section class="menu-card" id="cakes"><h2>🎂 Cakes</h2><ul><li data-item>Chocolate Cake</li><li data-item>Vanilla Cake</li><li data-item>Red Velvet Cake</li><li data-item>Birthday Celebration Cake</li></ul><a href="enquiry.html?item=Cakes">Enquire about cakes</a></section>
+    <section class="menu-card" id="pastries"><h2>🥐 Pastries</h2><ul><li data-item>Croissants</li><li data-item>Blueberry Muffins</li><li data-item>Chocolate Muffins</li><li data-item>Fruit Pastries</li></ul><a href="enquiry.html?item=Pastries">Enquire about pastries</a></section>
+    <section class="menu-card" id="bread"><h2>🍞 Bread</h2><ul><li data-item>Fresh White Bread</li><li data-item>Brown Bread</li><li data-item>Whole Wheat Bread</li><li data-item>Sweet Rolls</li></ul><a href="enquiry.html?item=Bread">Enquire about bread</a></section>
+    <section class="menu-card" id="drinks"><h2>☕ Drinks</h2><ul><li data-item>Coffee</li><li data-item>Tea</li><li data-item>Hot Chocolate</li><li data-item>Fresh Juice</li></ul><a href="enquiry.html?item=Drinks">Enquire about drinks</a></section>
+  </div>
+  <p id="no-results" class="notice" hidden>No menu items match your search. Try another word.</p>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div><strong>Ora's Bakery</strong><p>Freshly baked for everyday moments and special occasions.</p></div>
+    <p>Phone: 012 345 6789<br>Email: info@orasbakery.co.za</p>
+    <p>&copy; 2026 Ora's Bakery. Student project website.</p>
+  </div>
+</footer>
+<script src="js/script.js" defer></script>
 </body>
 </html>
