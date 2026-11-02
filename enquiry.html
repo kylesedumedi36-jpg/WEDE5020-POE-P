@@ -1,54 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ask Ora's Bakery about a cake, pastry, bread or drink order.">
-  <meta name="keywords" content="Ora's Bakery, bakery, cakes, fresh bread, pastries, muffins">
-  <meta name="author" content="ST10337762">
-  <title>Order Enquiry | Ora's Bakery</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Ora's Bakery home">
-      <span class="brand-icon" aria-hidden="true">🍰</span>
-      <span>Ora's Bakery<small>Freshly baked with care</small></span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="menu.html">Menu</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main-content" class="container page-content">
-  <section class="page-intro"><p class="eyebrow">Plan your order</p><h1>Product Enquiry</h1><p>Complete the form and the page will display a summary of your request. This demo does not confirm an order or price.</p></section>
-  <form id="enquiry-form" class="form-panel" novalidate>
-    <div class="form-grid">
-      <div class="form-field"><label for="enquiry-name">Your name *</label><input id="enquiry-name" name="name" type="text" required minlength="2" autocomplete="name"><small class="field-error" id="enquiry-name-error"></small></div>
-      <div class="form-field"><label for="enquiry-email">Email address *</label><input id="enquiry-email" name="email" type="email" required autocomplete="email"><small class="field-error" id="enquiry-email-error"></small></div>
-      <div class="form-field"><label for="product-type">Product type *</label><select id="product-type" name="product" required><option value="">Choose a category</option><option>Cakes</option><option>Pastries</option><option>Bread</option><option>Drinks</option></select><small class="field-error" id="product-type-error"></small></div>
-      <div class="form-field"><label for="quantity">Quantity *</label><input id="quantity" name="quantity" type="number" min="1" max="100" value="1" required><small class="field-error" id="quantity-error"></small></div>
-      <div class="form-field full-width"><label for="order-details">Tell us what you would like</label><textarea id="order-details" name="details" rows="4" maxlength="500" placeholder="For example, a vanilla birthday cake for 10 people."></textarea></div>
-    </div>
-    <button class="button" type="submit">Check enquiry</button>
-    <p id="enquiry-result" class="notice" role="status" hidden></p>
-  </form>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div><strong>Ora's Bakery</strong><p>Freshly baked for everyday moments and special occasions.</p></div>
-    <p>Phone: 012 345 6789<br>Email: info@orasbakery.co.za</p>
-    <p>&copy; 2026 Ora's Bakery. Student project website.</p>
-  </div>
-</footer>
-  <script src="js/script.js" defer></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Send Ora's Bakery an enquiry about products and custom orders.">
+        <meta name="author" content="Ora's Bakery student project">
+        <title>Order Enquiry | Ora's Bakery</title>
+        <link rel="preconnect" href="https://images.unsplash.com">
+        <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <header class="site-header">
+            <div class="header-inner wrap">
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="images/logo.jpg" alt="">
+                    <span class="brand-name">Ora<span class="brand-apostrophe">'</span>s Bakery<small>THE ART OF EVERYDAY INDULGENCE</small></span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰ <span>Menu</span></button>
+                <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our story</a>
+                    <a href="menu.html">The menu</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="enquiry.html" aria-current="page">Order enquiry</a>
+                    <a href="contact.html">Visit us</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="page-masthead enquiry-mast">
+                <div class="wrap masthead-inner">
+                    <p class="eyebrow">05 — ORDER ENQUIRY</p>
+                    <h1>Something good<br>starts <em>here.</em></h1>
+                    <p>Tell us what you're dreaming of. We'll use your details to prepare an estimate for your request.</p>
+                </div>
+                <div class="masthead-side">
+                    MADE FOR
+                    <br>
+                    YOUR MOMENT.
+                </div>
+            </section>
+            <section class="wrap enquiry-layout">
+                <div class="enquiry-aside">
+                    <img src="https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/medium/classic_crunchy_chocolate_chip_cookies.jpg" alt="Fresh chocolate chip cookies">
+                    <p class="eyebrow">A LITTLE NOTE</p>
+                    <h2>Fresh ideas<br>are welcome.</h2>
+                    <p>Custom cakes and larger orders need a little extra planning. Please allow at least 48 hours and we'll do our best to help.</p>
+                    <a class="text-arrow" href="menu.html">Browse the menu ↗</a>
+                </div>
+                <section class="product-preview" id="product-preview" hidden aria-live="polite">
+                    <div class="preview-heading">
+                        <p class="eyebrow">TAKE A CLOSER LOOK</p>
+                        <h2 id="preview-title">Product photographs</h2>
+                        <p>Here are three views to help you picture your choice.</p>
+                    </div>
+                    <div class="preview-images">
+                        <img id="preview-image-one" src="" alt="Product view one">
+                        <img id="preview-image-two" src="" alt="Product view two">
+                        <img id="preview-image-three" src="" alt="Product view three">
+                    </div>
+                </section>
+                <form id="poe-enquiry-form" class="form-panel">
+                    <div class="form-heading">
+                        <span>LET'S PLAN SOMETHING DELICIOUS</span>
+                        <h2>Your order details</h2>
+                        <p>Fields marked * are required.</p>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="customer-name">Full name *</label>
+                            <input id="customer-name" name="name" required minlength="2" autocomplete="name" placeholder="Your name">
+                            <small class="field-error" id="customer-name-error"></small>
+                        </div>
+                        <div class="form-field">
+                            <label for="customer-email">Email address *</label>
+                            <input id="customer-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+                            <small class="field-error" id="customer-email-error"></small>
+                        </div>
+                        <div class="form-field">
+                            <label for="product-choice">What would you like? *</label>
+                            <select id="product-choice" name="product" required>
+                                <option value="">Choose a product</option>
+                                <option value="whole-wheat" data-price="20">Whole wheat bread — R20</option>
+                                <option value="brown-bread" data-price="24">Brown bread — R24</option>
+                                <option value="chocolate-cake" data-price="257">Chocolate cake — R257</option>
+                                <option value="vanilla-cake" data-price="201">Vanilla cake — R201</option>
+                                <option value="croissant" data-price="20">Croissant — R20</option>
+                                <option value="apple-danish" data-price="31">Apple Danish — R31</option>
+                                <option value="cookies" data-price="78">Chocolate chip cookies (6 pack) — R78</option>
+                                <option value="red-velvet" data-price="22">Red velvet cupcake — R22</option>
+                                <option value="coffee" data-price="21">Coffee — R21</option>
+                                <option value="hot-chocolate" data-price="25">Hot chocolate — R25</option>
+                            </select>
+                            <small class="field-error" id="product-choice-error"></small>
+                        </div>
+                        <div class="form-field">
+                            <label for="order-quantity">Quantity *</label>
+                            <input id="order-quantity" name="quantity" type="number" min="1" max="100" value="1" required>
+                            <small class="field-error" id="order-quantity-error"></small>
+                        </div>
+                        <div class="form-field">
+                            <label for="collection-date">Preferred collection date</label>
+                            <input id="collection-date" name="date" type="date">
+                        </div>
+                        <div class="form-field full-width">
+                            <label for="order-notes">A few more details</label>
+                            <textarea id="order-notes" name="notes" rows="4" maxlength="500" placeholder="Flavour, size, occasion or anything else we should know..."></textarea>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark" type="submit">Calculate my estimate ↗</button>
+                    <p id="poe-estimate" class="notice" role="status" hidden></p>
+                    <p class="form-help">This is an estimate only, not a confirmed order. The bakery will need to confirm availability and final pricing.</p>
+                </form>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="wrap footer-top">
+                <div>
+                    <a class="footer-brand" href="index.html"><img class="footer-logo" src="images/logo.jpg" alt="">Ora's Bakery<span>FRESHLY MADE. JOYFULLY SHARED.</span></a>
+                    <p>Little moments deserve something delicious.</p>
+                </div>
+                <div>
+                    <span class="footer-label">FIND US</span>
+                    <p>101 Henny Street, Pretoria<br>South Africa</p>
+                </div>
+                <div>
+                    <span class="footer-label">SAY HELLO</span>
+                    <p><a href="tel:0681054883">068 105 4883</a><br><a href="mailto:info@orasbakery.co.za">info@orasbakery.co.za</a></p>
+                </div>
+                <div>
+                    <span class="footer-label">EXPLORE</span>
+                    <p><a href="menu.html">Menu</a><br><a href="enquiry.html">Order enquiry</a></p>
+                </div>
+            </div>
+            <div class="wrap footer-bottom">
+                <span>© 2026 Ora's Bakery. All rights reserved.</span>
+                <span>BAKED WITH A LITTLE EXTRA LOVE.</span>
+            </div>
+        </footer>
+        <script src="js/script.js" defer></script>
+    </body>
 </html>

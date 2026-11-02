@@ -1,51 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Browse cakes, pastries, fresh bread and drinks from Ora's Bakery.">
-  <meta name="keywords" content="Ora's Bakery, bakery, cakes, fresh bread, pastries, muffins">
-  <meta name="author" content="ST10337762">
-  <title>Menu | Ora's Bakery</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Ora's Bakery home">
-      <span class="brand-icon" aria-hidden="true">🍰</span>
-      <span>Ora's Bakery<small>Freshly baked with care</small></span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="menu.html">Menu</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main-content" class="container page-content">
-  <section class="page-intro"><p class="eyebrow">Something for everyone</p><h1>Our Menu</h1><p>Search the menu below to find a bakery item. Prices and availability can be confirmed by enquiry.</p></section>
-  <div class="search-box"><label for="menu-search">Search menu items</label><input id="menu-search" type="search" placeholder="Try cake, bread or coffee"><p id="search-status" class="form-help" aria-live="polite">Showing all menu items.</p></div>
-  <div class="menu-grid" id="menu-items">
-    <section class="menu-card" id="cakes"><h2>🎂 Cakes</h2><ul><li data-item>Chocolate Cake</li><li data-item>Vanilla Cake</li><li data-item>Red Velvet Cake</li><li data-item>Birthday Celebration Cake</li></ul><a href="enquiry.html?item=Cakes">Enquire about cakes</a></section>
-    <section class="menu-card" id="pastries"><h2>🥐 Pastries</h2><ul><li data-item>Croissants</li><li data-item>Blueberry Muffins</li><li data-item>Chocolate Muffins</li><li data-item>Fruit Pastries</li></ul><a href="enquiry.html?item=Pastries">Enquire about pastries</a></section>
-    <section class="menu-card" id="bread"><h2>🍞 Bread</h2><ul><li data-item>Fresh White Bread</li><li data-item>Brown Bread</li><li data-item>Whole Wheat Bread</li><li data-item>Sweet Rolls</li></ul><a href="enquiry.html?item=Bread">Enquire about bread</a></section>
-    <section class="menu-card" id="drinks"><h2>☕ Drinks</h2><ul><li data-item>Coffee</li><li data-item>Tea</li><li data-item>Hot Chocolate</li><li data-item>Fresh Juice</li></ul><a href="enquiry.html?item=Drinks">Enquire about drinks</a></section>
-  </div>
-  <p id="no-results" class="notice" hidden>No menu items match your search. Try another word.</p>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div><strong>Ora's Bakery</strong><p>Freshly baked for everyday moments and special occasions.</p></div>
-    <p>Phone: 012 345 6789<br>Email: info@orasbakery.co.za</p>
-    <p>&copy; 2026 Ora's Bakery. Student project website.</p>
-  </div>
-</footer>
-  <script src="js/script.js" defer></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Explore Ora's Bakery menu and rounded whole-rand prices.">
+        <meta name="author" content="Ora's Bakery student project">
+        <title>The Menu | Ora's Bakery</title>
+        <link rel="preconnect" href="https://images.unsplash.com">
+        <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <header class="site-header">
+            <div class="header-inner wrap">
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="images/logo.jpg" alt="">
+                    <span class="brand-name">Ora<span class="brand-apostrophe">'</span>s Bakery<small>THE ART OF EVERYDAY INDULGENCE</small></span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰ <span>Menu</span></button>
+                <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our story</a>
+                    <a href="menu.html" aria-current="page">The menu</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="enquiry.html">Order enquiry</a>
+                    <a href="contact.html">Visit us</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="menu-hero">
+                <div class="wrap menu-hero-inner">
+                    <p class="eyebrow">03 — THE MENU</p>
+                    <h1>A little something<br>for <em>every craving.</em></h1>
+                    <p>From everyday essentials to sweet celebrations. Find a favourite, then let us know what you'd like.</p>
+                    <div class="menu-search">
+                        <label for="menu-search">LOOKING FOR SOMETHING?</label>
+                        <input id="menu-search" type="search" placeholder="Search bread, cake, coffee...">
+                        <span id="search-status" aria-live="polite">Showing all menu items.</span>
+                    </div>
+                </div>
+            </section>
+            <section class="wrap menu-listing">
+                <div class="menu-note">
+                    <span>PLEASE NOTE</span>
+                    <p>Prices are estimates in South African rand. Availability and custom-order prices should be confirmed with the bakery.</p>
+                </div>
+                <div class="menu-grid" id="menu-items">
+                    <section class="menu-card" id="bread" data-menu-card>
+                        <div class="menu-photo">
+                            <img src="https://images.unsplash.com/photo-1767065888005-cdbfcb4619c3?auto=format&fit=crop&w=1600&q=85" alt="Rustic sourdough bread">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-category">
+                                01 / EVERYDAY ESSENTIALS
+                            </div>
+                            <h2>Bread & loaves</h2>
+                            <p>Good bread makes a good day.</p>
+                            <ul>
+                                <li data-item><span>Whole wheat bread</span><strong>R20</strong></li>
+                                <li data-item><span>Brown bread</span><strong>R24</strong></li>
+                            </ul>
+                            <a href="enquiry.html?item=bread">Enquire about bread ↗</a>
+                        </div>
+                    </section>
+                    <section class="menu-card" id="cakes" data-menu-card>
+                        <div class="menu-photo">
+                            <img src="https://images.unsplash.com/photo-1640506054499-2b040ca19023?auto=format&fit=crop&w=1400&q=85" alt="Minimal white celebration cake">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-category">
+                                02 / MADE TO CELEBRATE
+                            </div>
+                            <h2>Cakes</h2>
+                            <p>A centrepiece for your best moments.</p>
+                            <ul>
+                                <li data-item><span>Chocolate cake</span><strong>R257</strong></li>
+                                <li data-item><span>Vanilla cake</span><strong>R201</strong></li>
+                            </ul>
+                            <a href="enquiry.html?item=cakes">Enquire about cakes ↗</a>
+                        </div>
+                    </section>
+                    <section class="menu-card" id="pastries" data-menu-card>
+                        <div class="menu-photo">
+                            <img src="https://cdn.prod.website-files.com/64a1b85c48f13cb1dd09208c/64bd8b9b79e0f267ccff1227_Tobias-Weber-Back-Konditorei-20.jpg" alt="Golden cinnamon pastries">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-category">
+                                03 / FLAKY FAVOURITES
+                            </div>
+                            <h2>Pastries</h2>
+                            <p>Layers of comfort, baked golden.</p>
+                            <ul>
+                                <li data-item><span>Croissant</span><strong>R20</strong></li>
+                                <li data-item><span>Apple Danish</span><strong>R31</strong></li>
+                            </ul>
+                            <a href="enquiry.html?item=pastries">Enquire about pastries ↗</a>
+                        </div>
+                    </section>
+                    <section class="menu-card" id="cookies" data-menu-card>
+                        <div class="menu-photo">
+                            <img src="https://snapcalorie-webflow-website.s3.us-east-2.amazonaws.com/media/recipe_pics_v2/medium/classic_crunchy_chocolate_chip_cookies.jpg" alt="Chocolate chip cookies">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-category">
+                                04 / LITTLE TREATS
+                            </div>
+                            <h2>Cookies & cupcakes</h2>
+                            <p>A sweet pick-me-up for any time.</p>
+                            <ul>
+                                <li data-item><span>Chocolate chip cookies (6 pack)</span><strong>R78</strong></li>
+                                <li data-item><span>Red velvet cupcake</span><strong>R22</strong></li>
+                            </ul>
+                            <a href="enquiry.html?item=cookies">Enquire about treats ↗</a>
+                        </div>
+                    </section>
+                    <section class="menu-card" id="drinks" data-menu-card>
+                        <div class="menu-photo drinks-photo-strip" aria-label="Coffee and hot chocolate photographs">
+                            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="Freshly made cup of coffee" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85" alt="Coffee being prepared" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1542108899561-eb215cf20d9f?auto=format&fit=crop&w=900&q=85" alt="Warm hot chocolate" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-category">
+                                05 / TAKE A MOMENT
+                            </div>
+                            <h2>Something to sip</h2>
+                            <p>Pair your bake with a warm cup.</p>
+                            <ul>
+                                <li data-item><span>Coffee</span><strong>R21</strong></li>
+                                <li data-item><span>Hot chocolate</span><strong>R25</strong></li>
+                            </ul>
+                            <a href="enquiry.html?item=beverages">Enquire about drinks ↗</a>
+                        </div>
+                    </section>
+                </div>
+                <p id="no-results" class="no-results" hidden>No menu items match your search. Try another word.</p>
+            </section>
+            <section class="menu-bottom">
+                <div class="wrap menu-bottom-inner">
+                    <div>
+                        <p class="eyebrow">MADE JUST FOR YOU</p>
+                        <h2>Have a special<br><em>request?</em></h2>
+                    </div>
+                    <p>Planning a birthday, a family gathering or simply craving something custom? Give us at least 48 hours for made-to-order requests.</p>
+                    <a class="btn btn-light" href="enquiry.html">Tell us what you need ↗</a>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="wrap footer-top">
+                <div>
+                    <a class="footer-brand" href="index.html"><img class="footer-logo" src="images/logo.jpg" alt="">Ora's Bakery<span>FRESHLY MADE. JOYFULLY SHARED.</span></a>
+                    <p>Little moments deserve something delicious.</p>
+                </div>
+                <div>
+                    <span class="footer-label">FIND US</span>
+                    <p>101 Henny Street, Pretoria<br>South Africa</p>
+                </div>
+                <div>
+                    <span class="footer-label">SAY HELLO</span>
+                    <p><a href="tel:0681054883">068 105 4883</a><br><a href="mailto:info@orasbakery.co.za">info@orasbakery.co.za</a></p>
+                </div>
+                <div>
+                    <span class="footer-label">EXPLORE</span>
+                    <p><a href="menu.html">Menu</a><br><a href="enquiry.html">Order enquiry</a></p>
+                </div>
+            </div>
+            <div class="wrap footer-bottom">
+                <span>© 2026 Ora's Bakery. All rights reserved.</span>
+                <span>BAKED WITH A LITTLE EXTRA LOVE.</span>
+            </div>
+        </footer>
+        <script src="js/script.js" defer></script>
+    </body>
 </html>

@@ -1,65 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Visit Ora's Bakery for fresh cakes, bread, pastries, muffins and friendly service.">
-  <meta name="keywords" content="Ora's Bakery, bakery, cakes, fresh bread, pastries, muffins">
-  <meta name="author" content="ST10337762">
-  <title>Ora's Bakery | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Ora's Bakery home">
-      <span class="brand-icon" aria-hidden="true">🍰</span>
-      <span>Ora's Bakery<small>Freshly baked with care</small></span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="menu.html">Menu</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main-content">
-  <section class="hero">
-    <div class="container hero-content">
-      <p class="eyebrow">Fresh from our oven</p>
-      <h1>A little sweetness makes every day better.</h1>
-      <p>Find freshly baked bread, celebration cakes, pastries and treats at Ora's Bakery.</p>
-      <div class="button-row">
-        <a class="button" href="menu.html">Explore the menu</a>
-        <a class="button button-light" href="enquiry.html">Ask about an order</a>
-      </div>
-    </div>
-  </section>
-  <section class="section container">
-    <div class="section-heading"><p class="eyebrow">Made with care</p><h2>What would you like today?</h2><p>Choose a favourite and visit our menu to see more options.</p></div>
-    <div class="card-grid">
-      <article class="info-card"><div class="card-emoji" aria-hidden="true">🎂</div><h3>Cakes</h3><p>Birthday cakes and sweet treats for special celebrations.</p><a href="menu.html#cakes">See cakes</a></article>
-      <article class="info-card"><div class="card-emoji" aria-hidden="true">🥐</div><h3>Pastries</h3><p>Croissants, muffins and other tasty pastries.</p><a href="menu.html#pastries">See pastries</a></article>
-      <article class="info-card"><div class="card-emoji" aria-hidden="true">🍞</div><h3>Fresh bread</h3><p>Simple bakery favourites for your daily meals.</p><a href="menu.html#bread">See bread</a></article>
-      <article class="info-card"><div class="card-emoji" aria-hidden="true">☕</div><h3>Drinks</h3><p>Enjoy coffee, tea, hot chocolate and juice.</p><a href="menu.html#drinks">See drinks</a></article>
-    </div>
-  </section>
-  <section class="feature-band">
-    <div class="container feature-content"><div><p class="eyebrow">Need something special?</p><h2>Tell us what you have in mind.</h2><p>Send an enquiry about a cake or another bakery item. We will show you a summary of your request.</p></div><a class="button" href="enquiry.html">Make an enquiry</a></div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div><strong>Ora's Bakery</strong><p>Freshly baked for everyday moments and special occasions.</p></div>
-    <p>Phone: 012 345 6789<br>Email: info@orasbakery.co.za</p>
-    <p>&copy; 2026 Ora's Bakery. Student project website.</p>
-  </div>
-</footer>
-  <script src="js/script.js" defer></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Ora's Bakery in Pretoria — fresh bread, pastries, celebration cakes and coffee.">
+        <meta name="author" content="Ora's Bakery student project">
+        <title>Home | Ora's Bakery</title>
+        <link rel="preconnect" href="https://images.unsplash.com">
+        <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <header class="site-header">
+            <div class="header-inner wrap">
+                <a class="brand" href="index.html" aria-current="page">
+                    <img class="brand-mark" src="images/logo.jpg" alt="">
+                    <span class="brand-name">Ora<span class="brand-apostrophe">'</span>s Bakery<small>THE ART OF EVERYDAY INDULGENCE</small></span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰ <span>Menu</span></button>
+                <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="about.html">Our story</a>
+                    <a href="menu.html">The menu</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="enquiry.html">Order enquiry</a>
+                    <a href="contact.html">Visit us</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="home-hero">
+                <div class="wrap hero-grid">
+                    <div class="hero-copy">
+                        <p class="eyebrow">A NEIGHBOURHOOD BAKERY · PRETORIA</p>
+                        <h1>Good things<br>rise <em>here.</em></h1>
+                        <p class="hero-lead">From the first crackle of a warm loaf to the last bite of something sweet, find your everyday reason to slow down.</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-dark" href="menu.html">Explore the menu <span>↗</span></a>
+                            <a class="under-link" href="about.html">A little about us <span>→</span></a>
+                        </div>
+                        <div class="hero-note">
+                            <span class="note-line"></span>
+                            <span>SMALL BATCHES. BIG HEART.</span>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <img src="https://artisancollectionzim.com/assets/artisan-bakery-photo-C4Dkbg4w.jpg" alt="Artisan sourdough loaves and golden pastries on a bakery counter">
+                        <div class="image-stamp">
+                            <span>FRESH</span>
+                            <strong>from<br>the oven</strong>
+                            <small>EVERY DAY</small>
+                        </div>
+                        <span class="photo-index">01 / THE DAILY RITUAL</span>
+                    </div>
+                </div>
+            </section>
+            <section class="ticker">
+                <div class="wrap ticker-inner">
+                    <span>MADE WITH CARE</span>
+                    <b>✳</b>
+                    <span>SHARED WITH JOY</span>
+                    <b>✳</b>
+                    <span>BAKED FRESH</span>
+                    <b>✳</b>
+                    <span>MADE WITH CARE</span>
+                </div>
+            </section>
+            <section class="section wrap home-intro">
+                <div class="section-kicker">
+                    01 — THE GOOD STUFF
+                </div>
+                <div class="intro-heading">
+                    <h2>Freshly baked.<br><em>Never ordinary.</em></h2>
+                    <p>Everyday favourites, thoughtful ingredients and a little creativity. Whatever you're craving, there's a place for it at our table.</p>
+                </div>
+                <div class="product-mosaic">
+                    <a class="mosaic-card mosaic-large" href="menu.html#cakes">
+                        <img src="https://images.unsplash.com/photo-1640506054499-2b040ca19023?auto=format&fit=crop&w=1400&q=85" alt="Minimal white celebration cake">
+                        <span class="mosaic-number">01</span>
+                        <span class="mosaic-caption">
+                            <strong>Celebration cakes</strong>
+                            <small>For the moments worth remembering ↗</small>
+                        </span>
+                    </a>
+                    <a class="mosaic-card" href="menu.html#pastries">
+                        <img src="https://cdn.prod.website-files.com/64a1b85c48f13cb1dd09208c/64bd8b9b79e0f267ccff1227_Tobias-Weber-Back-Konditorei-20.jpg" alt="Freshly baked cinnamon rolls">
+                        <span class="mosaic-number">02</span>
+                        <span class="mosaic-caption">
+                            <strong>Pastry counter</strong>
+                            <small>Flaky, golden, gone too soon ↗</small>
+                        </span>
+                    </a>
+                    <a class="mosaic-card" href="menu.html#bread">
+                        <img src="https://images.unsplash.com/photo-1767065888005-cdbfcb4619c3?auto=format&fit=crop&w=1600&q=85" alt="Rustic sourdough loaf">
+                        <span class="mosaic-number">03</span>
+                        <span class="mosaic-caption">
+                            <strong>Daily bread</strong>
+                            <small>The simple things, done well ↗</small>
+                        </span>
+                    </a>
+                </div>
+            </section>
+            <section class="story-strip">
+                <div class="wrap story-grid">
+                    <div class="story-image">
+                        <img src="https://www.macc-cino.com/assets/bakery/cup_pastry.png" alt="Latte and croissant served at a bakery table">
+                        <span>GOOD MORNINGS START HERE</span>
+                    </div>
+                    <div class="story-copy">
+                        <p class="eyebrow">A PLACE TO PAUSE</p>
+                        <h2>Your table is<br><em>waiting.</em></h2>
+                        <p>Whether it's a quick coffee, a loaf for home or a cake made for a big day, we believe the best things are better when shared.</p>
+                        <a class="text-arrow" href="about.html">Get to know our bakery ↗</a>
+                    </div>
+                </div>
+            </section>
+            <section class="closing-cta">
+                <div class="wrap cta-inner">
+                    <p class="eyebrow">SOMETHING ON YOUR MIND?</p>
+                    <h2>Let's make it<br><em>delicious.</em></h2>
+                    <a class="btn btn-light" href="enquiry.html">Start an order enquiry ↗</a>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="wrap footer-top">
+                <div>
+                    <a class="footer-brand" href="index.html"><img class="footer-logo" src="images/logo.jpg" alt="">Ora's Bakery<span>FRESHLY MADE. JOYFULLY SHARED.</span></a>
+                    <p>Little moments deserve something delicious.</p>
+                </div>
+                <div>
+                    <span class="footer-label">FIND US</span>
+                    <p>101 Henny Street, Pretoria<br>South Africa</p>
+                </div>
+                <div>
+                    <span class="footer-label">SAY HELLO</span>
+                    <p><a href="tel:0681054883">068 105 4883</a><br><a href="mailto:info@orasbakery.co.za">info@orasbakery.co.za</a></p>
+                </div>
+                <div>
+                    <span class="footer-label">EXPLORE</span>
+                    <p><a href="menu.html">Menu</a><br><a href="enquiry.html">Order enquiry</a></p>
+                </div>
+            </div>
+            <div class="wrap footer-bottom">
+                <span>© 2026 Ora's Bakery. All rights reserved.</span>
+                <span>BAKED WITH A LITTLE EXTRA LOVE.</span>
+            </div>
+        </footer>
+        <script src="js/script.js" defer></script>
+    </body>
 </html>

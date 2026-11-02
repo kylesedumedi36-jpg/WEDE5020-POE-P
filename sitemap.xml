@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Replace example.com with the real deployed website address. -->
-  <url><loc>https://example.com/index.html</loc></url>
-  <url><loc>https://example.com/about.html</loc></url>
-  <url><loc>https://example.com/menu.html</loc></url>
-  <url><loc>https://example.com/gallery.html</loc></url>
-  <url><loc>https://example.com/enquiry.html</loc></url>
-  <url><loc>https://example.com/contact.html</loc></url>
+  <url><loc>https://YOUR-GITHUB-USERNAME.github.io/oras-bakery-website/</loc></url>
+  <url><loc>https://YOUR-GITHUB-USERNAME.github.io/oras-bakery-website/about.html</loc></url>
+  <url><loc>https://YOUR-GITHUB-USERNAME.github.io/oras-bakery-website/menu.html</loc></url>
+  <url><loc>https://YOUR-GITHUB-USERNAME.github.io/oras-bakery-website/gallery.html</loc></url>
+  <url><loc>https://YOUR-GITHUB-USERNAME.github.io/oras-bakery-website/enquiry.html</loc></url>
+  <url><loc>https://YOUR-GITHUB-USERNAME.github.io/oras-bakery-website/contact.html</loc></url>
 </urlset>

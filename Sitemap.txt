@@ -1,0 +1,10 @@
+ORA'S BAKERY WEBSITE SITEMAP
+
+Home (index.html)
+|-- Our Story (about.html)
+|-- The Menu (menu.html)
+|-- Gallery (gallery.html)
+|-- Order Enquiry (enquiry.html)
+`-- Visit Us (contact.html)
+
+All six pages are linked through the shared main navigation and footer.

@@ -1,56 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Ora's Bakery by phone or email, or prepare a message using our contact form.">
-  <meta name="keywords" content="Ora's Bakery, bakery, cakes, fresh bread, pastries, muffins">
-  <meta name="author" content="ST10337762">
-  <title>Contact | Ora's Bakery</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Ora's Bakery home">
-      <span class="brand-icon" aria-hidden="true">🍰</span>
-      <span>Ora's Bakery<small>Freshly baked with care</small></span>
-    </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="menu.html">Menu</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main id="main-content" class="container page-content">
-  <section class="page-intro"><p class="eyebrow">We are happy to help</p><h1>Contact Us</h1><p>Ask a question or send a general message to Ora's Bakery.</p></section>
-  <div class="contact-layout">
-    <section class="contact-details"><h2>Bakery details</h2><p><strong>Phone:</strong> 012 345 6789</p><p><strong>Email:</strong> info@orasbakery.co.za</p><p><strong>Address:</strong> Please confirm the bakery's real address before publishing.</p><p class="form-help">The contact details above are sample details for this student project. Replace them with approved details.</p><a href="https://www.google.com/maps" target="_blank" rel="noopener">Open Google Maps</a></section>
-    <form id="contact-form" class="form-panel" novalidate>
-      <h2>Send a message</h2>
-      <div class="form-field"><label for="contact-name">Your name *</label><input id="contact-name" name="name" type="text" required minlength="2" autocomplete="name"><small class="field-error" id="contact-name-error"></small></div>
-      <div class="form-field"><label for="contact-email">Email address *</label><input id="contact-email" name="email" type="email" required autocomplete="email"><small class="field-error" id="contact-email-error"></small></div>
-      <div class="form-field"><label for="message-type">Message type *</label><select id="message-type" name="messageType" required><option value="">Choose a topic</option><option>General question</option><option>Feedback</option><option>Order follow-up</option><option>Other</option></select><small class="field-error" id="message-type-error"></small></div>
-      <div class="form-field"><label for="contact-message">Your message *</label><textarea id="contact-message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea><small class="field-error" id="contact-message-error"></small></div>
-      <button class="button" type="submit">Prepare email</button>
-      <p class="form-help">After validation, your default email app will open with the message ready to send. This website does not send email directly.</p>
-      <p id="contact-result" class="notice" role="status" hidden></p>
-    </form>
-  </div>
-</main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div><strong>Ora's Bakery</strong><p>Freshly baked for everyday moments and special occasions.</p></div>
-    <p>Phone: 012 345 6789<br>Email: info@orasbakery.co.za</p>
-    <p>&copy; 2026 Ora's Bakery. Student project website.</p>
-  </div>
-</footer>
-  <script src="js/script.js" defer></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contact Ora's Bakery by phone, email or message form.">
+        <meta name="author" content="Ora's Bakery student project">
+        <title>Visit Us | Ora's Bakery</title>
+        <link rel="preconnect" href="https://images.unsplash.com">
+        <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <header class="site-header">
+            <div class="header-inner wrap">
+                <a class="brand" href="index.html">
+                    <img class="brand-mark" src="images/logo.jpg" alt="">
+                    <span class="brand-name">Ora<span class="brand-apostrophe">'</span>s Bakery<small>THE ART OF EVERYDAY INDULGENCE</small></span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰ <span>Menu</span></button>
+                <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Our story</a>
+                    <a href="menu.html">The menu</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="enquiry.html">Order enquiry</a>
+                    <a href="contact.html" aria-current="page">Visit us</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main-content">
+            <section class="page-masthead contact-mast">
+                <div class="wrap masthead-inner">
+                    <p class="eyebrow">06 — COME THROUGH</p>
+                    <h1>Let's make<br><em>contact.</em></h1>
+                    <p>Questions, ideas, feedback or a cake emergency? We'd love to hear from you.</p>
+                </div>
+            </section>
+            <section class="wrap contact-page">
+                <div class="contact-info">
+                    <div class="contact-image">
+                        <img src="https://static.wixstatic.com/media/34f50a_3aabf9c6a2384c93ae1229bbf1018a71~mv2.jpg/v1/fill/w_900%2Ch_900%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/34f50a_3aabf9c6a2384c93ae1229bbf1018a71~mv2.jpg" alt="Latte art and pastries at a cafe">
+                    </div>
+                    <p class="eyebrow">YOUR LOCAL BAKERY</p>
+                    <h2>Drop by.<br>Say <em>hello.</em></h2>
+                    <div class="contact-block">
+                        <span>ADDRESS</span>
+                        <p>101 Henny Street<br>Pretoria, South Africa</p>
+                    </div>
+                    <div class="contact-block">
+                        <span>PHONE & EMAIL</span>
+                        <p><a href="tel:0681054883">068 105 4883</a><br><a href="mailto:info@orasbakery.co.za">info@orasbakery.co.za</a></p>
+                    </div>
+                    <a class="text-arrow" href="https://www.google.com/maps/search/?api=1&query=101+Henny+Street+Pretoria" target="_blank" rel="noopener">Open directions in Google Maps ↗</a>
+                </div>
+                <form id="contact-form" class="form-panel" novalidate>
+                    <div class="form-heading">
+                        <span>WE'RE LISTENING</span>
+                        <h2>Send us a message</h2>
+                        <p>Fill in the details and your email app will open with your message ready.</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-name">Your name *</label>
+                        <input id="contact-name" name="name" type="text" required minlength="2" autocomplete="name" placeholder="Your name">
+                        <small class="field-error" id="contact-name-error"></small>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-email">Email address *</label>
+                        <input id="contact-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+                        <small class="field-error" id="contact-email-error"></small>
+                    </div>
+                    <div class="form-field">
+                        <label for="message-type">What's this about? *</label>
+                        <select id="message-type" name="messageType" required>
+                            <option value="">Choose a topic</option>
+                            <option>General question</option>
+                            <option>Order follow-up</option>
+                            <option>Feedback</option>
+                            <option>Custom cake request</option>
+                            <option>Other</option>
+                        </select>
+                        <small class="field-error" id="message-type-error"></small>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-message">Your message *</label>
+                        <textarea id="contact-message" name="message" rows="6" required minlength="10" maxlength="1000" placeholder="Write your message here..."></textarea>
+                        <small class="field-error" id="contact-message-error"></small>
+                    </div>
+                    <button class="btn btn-dark" type="submit">Prepare my message ↗</button>
+                    <p class="form-help">This website does not send email directly. Your default email application will open after validation.</p>
+                    <p id="contact-result" class="notice" role="status" hidden></p>
+                </form>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="wrap footer-top">
+                <div>
+                    <a class="footer-brand" href="index.html"><img class="footer-logo" src="images/logo.jpg" alt="">Ora's Bakery<span>FRESHLY MADE. JOYFULLY SHARED.</span></a>
+                    <p>Little moments deserve something delicious.</p>
+                </div>
+                <div>
+                    <span class="footer-label">FIND US</span>
+                    <p>101 Henny Street, Pretoria<br>South Africa</p>
+                </div>
+                <div>
+                    <span class="footer-label">SAY HELLO</span>
+                    <p><a href="tel:0681054883">068 105 4883</a><br><a href="mailto:info@orasbakery.co.za">info@orasbakery.co.za</a></p>
+                </div>
+                <div>
+                    <span class="footer-label">EXPLORE</span>
+                    <p><a href="menu.html">Menu</a><br><a href="enquiry.html">Order enquiry</a></p>
+                </div>
+            </div>
+            <div class="wrap footer-bottom">
+                <span>© 2026 Ora's Bakery. All rights reserved.</span>
+                <span>BAKED WITH A LITTLE EXTRA LOVE.</span>
+            </div>
+        </footer>
+        <script src="js/script.js" defer></script>
+    </body>
 </html>
